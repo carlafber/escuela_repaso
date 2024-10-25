@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="408.0" prefWidth="603.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.escuela_repaso.controllers.InscripcionController">
+   <children>
+      <Text layoutX="239.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COLEGIO">
+         <font>
+            <Font name="Gill Sans Nova Cond Ultra Bold" size="35.0" />
+         </font>
+      </Text>
+      <Text layoutX="254.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="inscripción">
+         <font>
+            <Font name="Gill Sans Nova Cond Ultra Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="254.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Curso:">
+         <font>
+            <Font name="Gill Sans Nova Light" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="73.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lista de alumnos:">
+         <font>
+            <Font name="Gill Sans Nova Light" size="20.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="cb_cursos" layoutX="328.0" layoutY="119.0" onMouseClicked="#onCursosClick" prefHeight="40.0" prefWidth="236.0" />
+      <ListView fx:id="lv_alumnos" layoutX="39.0" layoutY="118.0" onMouseClicked="#onAlumnoClick" prefHeight="259.0" prefWidth="200.0" />
+      <Button fx:id="bt_volver" layoutX="280.0" layoutY="262.0" mnemonicParsing="false" onAction="#OnVolverClick" prefHeight="39.0" prefWidth="96.0" text="Volver" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Gill Sans Nova Light" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="bt_inscribir" layoutX="446.0" layoutY="262.0" mnemonicParsing="false" onAction="#OnInscribirClick" prefHeight="39.0" prefWidth="96.0" text="Inscribir" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Gill Sans Nova Light" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

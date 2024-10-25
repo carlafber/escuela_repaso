@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="497.0" prefWidth="917.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.escuela_repaso.controllers.InicioController">
+   <children>
+      <Text layoutX="396.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COLEGIO">
+         <font>
+            <Font name="Gill Sans Nova Cond Ultra Bold" size="35.0" />
+         </font>
+      </Text>
+      <Text layoutX="275.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alumnos:">
+         <font>
+            <Font name="Gill Sans Nova Light" size="23.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tv_alumnos" layoutX="23.0" layoutY="121.0" prefHeight="337.0" prefWidth="588.0">
+         <columns>
+            <TableColumn fx:id="tc_nombre" prefWidth="144.0" text="Nombre" />
+            <TableColumn fx:id="tc_curso" prefWidth="250.0" text="Curso" />
+            <TableColumn fx:id="tc_email" prefWidth="192.0" text="Email" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button fx:id="bt_inscribir" layoutX="668.0" layoutY="141.0" mnemonicParsing="false" onAction="#OnInscribirClick" prefHeight="39.0" prefWidth="204.0" text="Inscribir alumno a cursos" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Gill Sans Nova Light" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="bt_nuevocurso" layoutX="668.0" layoutY="226.0" mnemonicParsing="false" onAction="#OnNuevoCursoClick" prefHeight="39.0" prefWidth="204.0" text="Añadir nuevo curso" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Gill Sans Nova Light" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="bt_nuevoalumno" layoutX="668.0" layoutY="317.0" mnemonicParsing="false" onAction="#OnNuevoAlumnoClick" prefHeight="39.0" prefWidth="204.0" text="Añadir nuevo alumno" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Gill Sans Nova Light" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="bt_salir" layoutX="736.0" layoutY="393.0" mnemonicParsing="false" onAction="#OnSalirClick" prefHeight="39.0" prefWidth="69.0" text="SALIR" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Gill Sans Nova Light" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
